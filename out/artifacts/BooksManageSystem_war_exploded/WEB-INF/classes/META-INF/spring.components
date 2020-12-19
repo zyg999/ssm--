@@ -1,0 +1,4 @@
+org.zyg.controller.BookController=org.springframework.stereotype.Component
+org.zyg.controller.LoginController=org.springframework.stereotype.Component
+org.zyg.service.impl.BookServiceImpl=org.springframework.stereotype.Component
+org.zyg.service.impl.UserServiceImpl=org.springframework.stereotype.Component

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.zyg.dao.UserMapper">
+
+
+    <select id="queryUser" resultType="user">
+         select user_name userName, user_pass userPass
+        from user_inf where user_name = #{name} and user_pass = #{pass}
+    </select>
+    <insert id="addUser">
+        insert into user_inf values (#{userName}, #{userPass})
+    </insert>
+
+</mapper>
